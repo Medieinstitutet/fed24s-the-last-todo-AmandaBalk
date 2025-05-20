@@ -50,7 +50,12 @@ för att köra projektet.
 - C:\Work\AssignmentCorrector\backend\repos\fed24s-the-last-todo-AmandaBalk\src\models\createTodo.ts - no-unused-vars - 'todo' is defined but never used.,no-unused-vars - 'done' is defined but never used.
 
 ## 🏆 **Betyg: VG**
-📌 **Motivering:** Koden uppfyller både G och VG-kraven. Projektet visar en todo-lista där användaren kan markera och avmarkera uppgifter som färdiga. Funktionalitet för att lägga till nya uppgifter via ett formulär finns, och sorted also in descending or ascending order är möjlig. Koden är också välstrukturerad med delade komponenter och lifting state up. Användningen av Tailwind CSS ger en stilren och komponentbaserad UI som uppfyller ett av kraven för VG.
+📌 **Motivering:** Koden uppfyller alla krav för både G och VG. Applikationen implementerar en hårdkodad todo-lista och presenterar den med HTML-struktur. Användaren kan lägga till och ta bort tasks, markera dem som klara och oklara igen. Dessutom används lifting state up, och applikationen har ett sorteringssystem samt ett formulär för att lägga till nya todos tillsammans med användande av tailwindcss.
 
 💡 **Förbättringsförslag:**  
-Omdömet på koden är överlag mycket bra, dock kan några förbättringar övervägas för att ytterligare höja kvaliteten. Förtydliga gärna komponentnamn som 'HandleCheckbox' till något mer beskrivande. Det skulle också vara bättre kodkvalitet om 'handleCheckboxChange' flyttas till en separat util-fil. För att göra komponenterna ännu mer återanvändbara kan Prop Types eller TypeScript-gränssnitt användas mer omfattande, och kontroll diskutabelt om det kan göras med mindre antalet API-anrop lokal lagring optimeras. Uppdatera CSS-klasserna för ännu bättre responsivitet och UI/UX-anpassning.
+Det finns några saker som kan förbättras: 
+- Bättre hantering av unika id:n när nya todos skapas för att undvika potentiella konflikter. 
+- Förbättra felhantering och validering när uppgifter läggs till, t.ex. kontroll för dubbletter. 
+- Använd mer tillgänglighetsfrämjande attribut och funktioner, till exempel användning av <label> taggar för <input>-fältet. 
+- Integrera ännu tydligare och användarvänlig feedback för användarna när de interagerar med gränssnittet. 
+Att fixa ovanstående skulle göra applikationen mer robust och användarvänlig.
